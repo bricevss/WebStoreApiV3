@@ -37,7 +37,7 @@ public class Command {
 	private Payment payment;
 	
 	@ManyToOne @JoinColumn(name="id_user")
-	private Users user;
+	private User user;
 	
 	public Command() {
 		Faker f = new Faker();

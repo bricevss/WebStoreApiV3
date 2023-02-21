@@ -32,12 +32,12 @@ public class UserInformations {
 	private String phoneNumber;
 	
 	@OneToOne @JoinColumn(name="id_user")	
-	private Users user;
+	private User user;
 
 	
 	
 	
-	public UserInformations(Users u) {
+	public UserInformations(User u) {
 		Faker f = new Faker();
 		
 		this.address = f.address().fullAddress();

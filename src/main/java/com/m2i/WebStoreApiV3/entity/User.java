@@ -25,7 +25,7 @@ import lombok.ToString;
 
 @Entity @Table(name="users")
 @Getter @Setter @AllArgsConstructor @ToString
-public class Users {
+public class User {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
@@ -52,7 +52,7 @@ public class Users {
 	
 	
 	
-	public Users() {
+	public User() {
 		Faker f = new Faker();
 		
 		this.login = f.name().username();

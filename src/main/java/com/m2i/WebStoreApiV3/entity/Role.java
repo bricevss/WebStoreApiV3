@@ -29,7 +29,7 @@ public class Role {
 	@JoinTable(name = "user_role_association",
 			joinColumns = @JoinColumn(name="id_role"),
 			inverseJoinColumns = @JoinColumn(name="id_user"))
-	private List<Users> users;
+	private List<User> users;
 
 
 
